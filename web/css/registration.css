@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2020, 7:43:10 PM
+    Author     : Zafrul Hasan Nasim
+*/
+
+.container
+{
+    width: 400px;
+    height: 565px;
+    margin: 18px auto;
+    background: #13651e;
+    position: center;
+}
+
+.container form{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 50 cm;
+    color:wheat;
+    text-transform:none;
+    
+    text-align: center;
+    position: relative;
+    top: 100%;
+    transform: translateY(5%);
+}
+.account-title {
+    font-size: 32px;font-weight: normal;margin: 0 0 40px;text-align: center;
+}
