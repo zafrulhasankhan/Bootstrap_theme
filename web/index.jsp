@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,13 +7,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <link href="css/navbar.css" rel="stylesheet" type="text/css" >
+                <link rel="stylesheet" href="css/text_center.css">  
+
         <title>BootStrap Of Darkchocolate</title>
         <style>
            
             
             body
             {
-                background-image:url("image/webback3.jpeg")
+                background-image:url("image/webback3_1.jpeg")
             }
         </style>
         
@@ -25,7 +26,7 @@
             <!-- ======================================Navigation Bar================================================= -->
             <nav class="navbar navbar-expand-lg navStyle">
                 
-                
+                <a class="brand-navbar" href="#"><img src="image/logo9.jpg" alt="Responsive image" height="90px"> </a>
                 <div class="collapse navbar-collapse" id="mainMenu">
                     <ul class="navbar-nav ml-auto navList">
                     
@@ -50,6 +51,9 @@
             </nav>
         </header>
     
-   
+   <div class="container">
+  
+    <h1>Welcome to nasim's project</h1>
+  </div>
 </body>
 </html>
