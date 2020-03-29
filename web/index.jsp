@@ -32,16 +32,16 @@
                     
                         <li class="nav-item active"><a href="#" class="nav-link"><i class="fas fa-align-right"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Home</i></b></h4></button><span class="sr-only">(current)</span></a></li>
                         <li class="nav-item">
-                            <a href="registration.jsp" class="nav-link"><i class="fas fa-user-plus"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Register</i></b></h4></button></a>
+                            <a href="registration.jsp" class="nav-link"><i class="fas fa-user-plus"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Sign Up</i></b></h4></button></a>
                         </li>
                         <li class="nav-item">
                             <a href="search.jsp" class="nav-link"><i class="fas fa-search"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Search</i></b></h4></button></a>
                         </li>
                         <li class="nav-item">
-                            <a href="login1.jsp" class="nav-link"><i class="fas fa-sign-in-alt"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Sign In</i></b></h4></button></a>
+                            <a href="login.jsp" class="nav-link"><i class="fas fa-sign-in-alt"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Sign In</i></b></h4></button></a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.jsp" class="nav-link"><i class="fas fa-users"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>About</i></b></h4></button></a>
+                            <a href="userList_servlet" class="nav-link"><i class="fas fa-users"></i><button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>UserList</i></b></h4></button></a>
                         </li>
                         <li class="nav-item">
                             <a href="logout.jsp" class="nav-link"><i class="fas fa-sign-out-alt"></i> <button type="button" style="color: white"  class="btn btn-link mb-1"><h4><b><i>Logout</i></b></h4></button></a>

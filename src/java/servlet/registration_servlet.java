@@ -59,7 +59,7 @@ public class registration_servlet extends HttpServlet {
         }
         
         
-        request.getRequestDispatcher("regismsg.jsp").forward(request, response);
+        request.getRequestDispatcher("regis_success.jsp").forward(request, response);
         
     }
     
