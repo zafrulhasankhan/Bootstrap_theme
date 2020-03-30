@@ -45,14 +45,21 @@ public class login_servlet extends HttpServlet {
              if(rs.next()){
                 String name1 = rs.getString("username"); 
                 String email1 = rs.getString("Email");
+                String dept =rs.getString("Dept");
+                String mobile =rs.getString("mobile");
                 String passs = rs.getString("password");
-                request.setAttribute("username", name1);
-                request.setAttribute("Email", email1);
-                request.setAttribute("password", passs);
+               
                 
+                 HttpSession session = request.getSession();
+                session.setAttribute("name1", name1);
+                session.setAttribute("dept", dept);
+                session.setAttribute("email2", email1);
+                session.setAttribute("mobile", mobile);
+                
+                request.getRequestDispatcher("userprofile.jsp").forward(request, response);
                 String msg2 = "Login Successfull";
             request.setAttribute("msg",msg2);
-                 request.getRequestDispatcher("regis_success.jsp").forward(request, response);
+                
                 
             //request.getRequestDispatcher("loginmsg.jsp").forward(request,response);
                  System.out.println("dj");
