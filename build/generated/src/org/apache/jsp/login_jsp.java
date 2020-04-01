@@ -48,12 +48,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<head>\n");
       out.write("    <title>BootStrap Of Darkchocolate</title>\n");
       out.write("  <meta charset=\"utf-8\">\n");
-      out.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
       out.write("  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\">\n");
-      out.write("  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n");
-      out.write("  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>\n");
-      out.write("  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js\"></script>\n");
-      out.write("  <link href=\"css/navbar.css\" rel=\"stylesheet\" type=\"text/css\" >\n");
       out.write("  <link rel=\"stylesheet\" href=\"css/login.css\">  \n");
       out.write("\n");
       out.write("    <style>\n");

@@ -42,12 +42,12 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("<head>\n");
+      out.write("    \n");
       out.write("    <title>BootStrap Of Darkchocolate</title>\n");
       out.write("  <meta charset=\"utf-8\">\n");
       out.write("  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\">\n");
-      out.write("  <link rel=\"stylesheet\" href=\"css/registration.css\">  \n");
-      out.write("\n");
-      out.write("    <style>\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/userprofile.css\">\n");
+      out.write("   <style>\n");
       out.write("           \n");
       out.write("            \n");
       out.write("            body\n");
@@ -81,7 +81,85 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </ul>\n");
       out.write("                </div>\n");
       out.write("            </nav>\n");
-      out.write("        </header>");
+      out.write("        </header>\n");
+      out.write("    \n");
+      out.write("            \n");
+      out.write("             ");
+
+               String name1 = session.getAttribute("name1").toString();
+               session.setAttribute("name1", name1);
+               
+               String dept = session.getAttribute("dept").toString();
+               session.setAttribute("dept", dept);
+               
+               String email1 = session.getAttribute("email2").toString();
+               session.setAttribute("email2", email1);
+                
+               String mobile = session.getAttribute("mobile").toString();
+               session.setAttribute("mobile",mobile);
+            
+      out.write(" \n");
+      out.write("           \n");
+      out.write("            <br><div class=\"panel-heading\" align=\"center\"> <h3 style=\"color:white;\">  profile  of ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</h3></div>\n");
+      out.write("            <div class=\"container\">\n");
+      out.write("                    \n");
+      out.write("                <br>\n");
+      out.write("                                <div class=\"form\">\n");
+      out.write("                                    <div class=\"name\">\n");
+      out.write("                                         <h5 style=\"color:white;\"> Username : </h5>\n");
+      out.write("                                        <input class=\"form-control\" type=\"text\" name=\"firstname\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" style=\"width:280px; text-align: center; color: #0000ff\" readonly>\n");
+      out.write("                                    </div><br>\n");
+      out.write("                                    \n");
+      out.write("                                        \n");
+      out.write("                                   \n");
+      out.write("                                        <div class=\"dept\">\n");
+      out.write("                                        <h5 style=\"color:white;\"> Department name : </h5>\n");
+      out.write("                                        <input class=\"form-control\" type=\"text\" name=\"firstname\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dept}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" style=\"width:280px; text-align: center;color: #0000ff\" readonly>\n");
+      out.write("                                    </div><br>\n");
+      out.write("                              \n");
+      out.write("                                \n");
+      out.write("                                    \n");
+      out.write("                                    <div class=\"email\">\n");
+      out.write("                                        <h5 style=\"color:white;\"> Email : </h5>\n");
+      out.write("                                        <input class=\"form-control\" type=\"text\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${email2}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" style=\"width:280px; text-align: center;color: #0000ff\" readonly>\n");
+      out.write("                                    </div><br>\n");
+      out.write("                               \n");
+      out.write("                                \n");
+      out.write("                                       <div class=\"mobile\">\n");
+      out.write("                                        <h5 style=\"color:white;\">Mobile Number</h5>\n");
+      out.write("                                        <input class=\"form-control\" type=\"text\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mobile}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" style=\"width:280px; text-align: center; color: #0000ff\" readonly >\n");
+      out.write("                                    </div>\n");
+      out.write("                                \n");
+      out.write("                                </div>\n");
+      out.write("                                    <div class=\"vl\"></div>\n");
+      out.write("                                    <div class=\"profile-image\">\n");
+      out.write("                                        <img class=\"avatar\" src=\"image/user.jpg\" alt=\"\"></a>\n");
+      out.write("                                        <input type=\"file\" id=\"img\" name=\"img\" accept=\"image/yes.png\">\n");
+      out.write("                                        \n");
+      out.write("                                    </div>\n");
+      out.write("                                    <div>\n");
+      out.write("                                        <br><h5> ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" </h5>\n");
+      out.write("                                        <h5> Dept. of ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dept}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" </h5>\n");
+      out.write("                                    </div>\n");
+      out.write("                        </div>\n");
+      out.write("                    \n");
+      out.write("                \n");
+      out.write("              </body>\n");
+      out.write("    </html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

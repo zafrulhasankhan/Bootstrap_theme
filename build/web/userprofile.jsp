@@ -3,6 +3,7 @@
     <title>BootStrap Of Darkchocolate</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/userprofile.css">
    <style>
            
             
@@ -38,13 +39,13 @@
                 </div>
             </nav>
         </header>
-    <div class="container">
+    
             
              <%
                String name1 = session.getAttribute("name1").toString();
                session.setAttribute("name1", name1);
                
-               String dept = session.getAttribute("name1").toString();
+               String dept = session.getAttribute("dept").toString();
                session.setAttribute("dept", dept);
                
                String email1 = session.getAttribute("email2").toString();
@@ -54,42 +55,49 @@
                session.setAttribute("mobile",mobile);
             %> 
            
-            <div class=".col-xs-3 .col-md-offset-3" style="background-color: black;">
-                <div class="panel panel-default panel-info Profile">
-                    <div class="panel-heading"> <h3 align=""center">My Profile |  ${name1}</h3></div>
-                    <div class="panel-body">
-                        <div class="form-horizontal">
-                            <form>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">UserName</label>
-                                    <div class="col-sm-4">
-                                        <input class="form-control" type="text" name="firstname" value="${name1}" readonly>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="col-sm-2 control-label">UserName</label>
-                                    <div class="col-sm-4">
-                                        <input class="form-control" type="text" name="firstname" value="${dept}" readonly>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Email</label>
-                                    <div class="col-sm-4">
-                                        <input class="form-control" type="text" value="${email2}" readonly>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Mobile Number</label>
-                                    <div class="col-sm-4">
-                                        <input class="form-control" type="text" value="${mobile}" style="width:200px" readonly >
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-    </div>
-         </div>
+            <br><div class="panel-heading" align="center"> <h3 style="color:white;">  profile  of ${name1}</h3></div>
+            <div class="container">
+                    
+                <br>
+                                <div class="form">
+                                    <div class="name">
+                                         <h5 style="color:white;"> Username : </h5>
+                                        <input class="form-control" type="text" name="firstname" value="${name1}" style="width:280px; text-align: center; color: #0000ff" readonly>
+                                    </div><br>
                                     
-       
-         
-    
+                                        
+                                   
+                                        <div class="dept">
+                                        <h5 style="color:white;"> Department name : </h5>
+                                        <input class="form-control" type="text" name="firstname" value="${dept}" style="width:280px; text-align: center;color: #0000ff" readonly>
+                                    </div><br>
+                              
+                                
+                                    
+                                    <div class="email">
+                                        <h5 style="color:white;"> Email : </h5>
+                                        <input class="form-control" type="text" value="${email2}" style="width:280px; text-align: center;color: #0000ff" readonly>
+                                    </div><br>
+                               
+                                
+                                       <div class="mobile">
+                                        <h5 style="color:white;">Mobile Number</h5>
+                                        <input class="form-control" type="text" value="${mobile}" style="width:280px; text-align: center; color: #0000ff" readonly >
+                                    </div>
+                                
+                                </div>
+                                    <div class="vl"></div>
+                                    <div class="profile-image">
+                                        <img class="avatar" src="image/user.jpg" alt=""></a>
+                                        <input type="file" id="img" name="img" accept="image/yes.png">
+                                        
+                                    </div>
+                                    <div>
+                                        <h5> &emsp; ${name1} </h5>
+                                        <h5>Dept. of ${dept} </h5>
+                                    </div>
+                        </div>
+                    
+                
+              </body>
+    </html>

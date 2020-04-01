@@ -65,8 +65,8 @@
                                <input type="text" name="name" placeholder="Your Name" required="" class="name"/>
                            </div>
                              
-                           <div class="form-group custom-mt-form-group" align="center>
-								
+                            <div class="form-group custom-mt-form-group" align="center">
+ 				
 								<label class="control-label">Email: </label><i class="bar"></i><br>
                            <input type="text" name="email" placeholder="Your Email ID" required="" class="email"/>
 							</div>
