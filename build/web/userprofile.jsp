@@ -48,8 +48,8 @@
                String dept = session.getAttribute("dept").toString();
                session.setAttribute("dept", dept);
                
-               String email1 = session.getAttribute("email2").toString();
-               session.setAttribute("email2", email1);
+               String email = session.getAttribute("email").toString();
+               session.setAttribute("email", email);
                 
                String mobile = session.getAttribute("mobile").toString();
                session.setAttribute("mobile",mobile);
@@ -76,7 +76,7 @@
                                     
                                     <div class="email">
                                         <h5 style="color:white;"> Email : </h5>
-                                        <input class="form-control" type="text" value="${email2}" style="width:280px; text-align: center;color: #0000ff" readonly>
+                                        <input class="form-control" type="text" value="${email}" style="width:280px; text-align: center;color: #0000ff" readonly>
                                     </div><br>
                                
                                 
@@ -87,17 +87,23 @@
                                 
                                 </div>
                                     <div class="vl"></div>
-                                    <div class="profile-image">
-                                        <img class="avatar" src="image/user.jpg" alt=""></a>
-                                        <input type="file" id="img" name="img" accept="image/yes.png">
-                                        
+                                    
+                                    <div class="image">
+                                        <img src="image/_DSC0030.JPG" height="200px" width="220px" alt="avatar" style=" border-radius:50%;"></a>
+                                         
                                     </div>
-                                    <div>
-                                        <h5> &emsp; ${name1} </h5>
-                                        <h5>Dept. of ${dept} </h5>
+                                    <div class="namedept">
+                                     <h2 style=" text-align:center;"> ${name1} </h2>
+                                         <h3 style=" text-align:center;">Dept. of ${dept} </h3>
                                     </div>
+                                    
+                               
+                            
                         </div>
+                                     <div class="update">
+                                         <a href="userupdate.jsp"><button class="btnn">Update Profile</button></a>
+                                </div>
                     
-                
+                                    <h1>i love you :${name}</h1>
               </body>
     </html>

@@ -36,7 +36,7 @@ public class login_servlet extends HttpServlet {
          String pass = request.getParameter("pass");
          
         try {
-            PreparedStatement ps =DBConnection.getConnection().prepareStatement("select * from registration where username =? and Email = ? and password = ?");
+            PreparedStatement ps =DBConnection.getConnection().prepareStatement("select * from registration where username =? and email = ? and password = ?");
             ps.setString(1, name);
              ps.setString(2, email);
             ps.setString(3, pass);
@@ -44,7 +44,7 @@ public class login_servlet extends HttpServlet {
             
              if(rs.next()){
                 String name1 = rs.getString("username"); 
-                String email1 = rs.getString("Email");
+                String email1 = rs.getString("email");
                 String dept =rs.getString("Dept");
                 String mobile =rs.getString("mobile");
                 String passs = rs.getString("password");
@@ -53,7 +53,7 @@ public class login_servlet extends HttpServlet {
                  HttpSession session = request.getSession();
                 session.setAttribute("name1", name1);
                 session.setAttribute("dept", dept);
-                session.setAttribute("email2", email1);
+                session.setAttribute("email", email1);
                 session.setAttribute("mobile", mobile);
                 
                 request.getRequestDispatcher("userprofile.jsp").forward(request, response);

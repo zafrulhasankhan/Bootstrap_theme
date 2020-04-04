@@ -15,6 +15,28 @@ and open the template in the editor.
     margin: 18px auto;
     background: red;
     position:center;
+    animation: color-me-in 10s infinite; /* other keywords like "infinite alternate" can be useful here */
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: orange;
+  }
+  /* You could think of as "step 2" */
+  25%{
+      background:#ff00cc;
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background:#0000ff ;
+  }
+  100% {
+    background:orange;
+  }
+  
 }
 .form{
    
@@ -28,6 +50,32 @@ and open the template in the editor.
   border-left: 3px solid aqua;
   height: 400px;
   position: absolute;
-  right:650;
+  right:665;
   top:160;
+}
+.image{
+    position: absolute;
+    left:350;
+    top: 190;
+    transform: rotate(270deg);
+}
+.namedept{
+    position: absolute;
+    left:347;
+    top: 399;
+    color:white;
+}
+.update{
+    position: absolute;
+    right: 80;
+    top:525;
+    
+   
+}
+.btnn{
+    background: red;
+    border: 3px solid red;
+    color:white;
+    font-size: large;
+    
 }

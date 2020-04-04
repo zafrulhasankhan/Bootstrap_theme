@@ -41,7 +41,7 @@ public class userList_servlet extends HttpServlet {
                
                 u.setName(rs.getString("username"));
                  u.setDept(rs.getString("Dept"));
-                u.setEmail(rs.getString("Email"));
+                u.setEmail(rs.getString("email"));
                 u.setMobile(rs.getString("mobile"));
                
                 

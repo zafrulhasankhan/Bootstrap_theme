@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2020, 10:18:06 PM
+    Author     : Zafrul Hasan Nasim
+*/
+
+body
+{
+    width:900px;
+    height:400px;
+    margin: 18px auto;
+    background: red;
+    position:center;
+    animation: color-me-in 10s infinite; /* other keywords like "infinite alternate" can be useful here */
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: orange;
+  }
+  /* You could think of as "step 2" */
+  25%{
+      background:#ff00cc;
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background:#0000ff ;
+  }
+  100% {
+    background:black;
+  }
+  
+}

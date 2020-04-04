@@ -92,8 +92,8 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
                String dept = session.getAttribute("dept").toString();
                session.setAttribute("dept", dept);
                
-               String email1 = session.getAttribute("email2").toString();
-               session.setAttribute("email2", email1);
+               String email2 = session.getAttribute("email2").toString();
+               session.setAttribute("email2", email2);
                 
                String mobile = session.getAttribute("mobile").toString();
                session.setAttribute("mobile",mobile);
@@ -142,20 +142,26 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                \n");
       out.write("                                </div>\n");
       out.write("                                    <div class=\"vl\"></div>\n");
-      out.write("                                    <div class=\"profile-image\">\n");
-      out.write("                                        <img class=\"avatar\" src=\"image/user.jpg\" alt=\"\"></a>\n");
-      out.write("                                        <input type=\"file\" id=\"img\" name=\"img\" accept=\"image/yes.png\">\n");
-      out.write("                                        \n");
+      out.write("                                    \n");
+      out.write("                                    <div class=\"image\">\n");
+      out.write("                                        <img src=\"image/_DSC0030.JPG\" height=\"200px\" width=\"220px\" alt=\"avatar\" style=\" border-radius:50%;\"></a>\n");
+      out.write("                                         \n");
       out.write("                                    </div>\n");
-      out.write("                                    <div>\n");
-      out.write("                                        <br><h5> ");
+      out.write("                                    <div class=\"namedept\">\n");
+      out.write("                                     <h2 style=\" text-align:center;\"> ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(" </h5>\n");
-      out.write("                                        <h5> Dept. of ");
+      out.write(" </h2>\n");
+      out.write("                                         <h3 style=\" text-align:center;\">Dept. of ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dept}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(" </h5>\n");
+      out.write(" </h3>\n");
       out.write("                                    </div>\n");
+      out.write("                                    \n");
+      out.write("                               \n");
+      out.write("                            \n");
       out.write("                        </div>\n");
+      out.write("                                     <div class=\"update\">\n");
+      out.write("                                         <a href=\"userupdate.jsp\"><button class=\"btnn\">Update Profile</button></a>\n");
+      out.write("                                </div>\n");
       out.write("                    \n");
       out.write("                \n");
       out.write("              </body>\n");
