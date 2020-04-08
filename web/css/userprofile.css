@@ -79,3 +79,46 @@ and open the template in the editor.
     font-size: large;
     
 }
+.scroll{
+    
+    white-space: nowrap;
+   -webkit-animation: rightThenLeft 15s infinite;
+   position: absolute;
+    left:20;
+   top:55
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+
+}
+.updatemsg{
+   
+   
+   animation: bymove 4s infinite;
+}
+
+@keyframes bymove{
+   
+   0%{
+      color:red;
+      
+   }
+   25%{
+       color: blue;
+   }
+   50%{
+       color :yellow;
+   }
+   75%{
+       color:black;
+   }
+   100%{
+       color: white;
+   }
+
+}
+
+

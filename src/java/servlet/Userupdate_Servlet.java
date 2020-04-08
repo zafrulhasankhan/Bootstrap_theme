@@ -49,6 +49,8 @@ public class Userupdate_Servlet extends HttpServlet {
             session.setAttribute("name1", name);
             session.setAttribute("dept", dept);
             session.setAttribute("mobile", mobile);
+            String msg="updated Successfully";
+            request.setAttribute("msg", msg);
             
             
         } catch (SQLException ex) {

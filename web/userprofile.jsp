@@ -103,7 +103,9 @@
                                      <div class="update">
                                          <a href="userupdate.jsp"><button class="btnn">Update Profile</button></a>
                                 </div>
-                    
-                                    <h1>i love you :${name}</h1>
+                                    <div class="scroll">
+                                   <h2 class="updatemsg">${msg}</h2>
+                                    </div>
+
               </body>
     </html>
